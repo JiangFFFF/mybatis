@@ -1,0 +1,54 @@
+package com.jiang.mybatis.bean;
+
+import java.util.List;
+
+/**
+ * @author jiang
+ * @create 2021-09-27-1:41 下午
+ */
+public class Department {
+
+    private Integer id;
+    private String departmentName;
+    private List<Employee> emps;
+
+    public Department() {
+    }
+
+    public Department(Integer id) {
+        this.id = id;
+
+    }
+
+    public List<Employee> getEmps() {
+        return emps;
+    }
+
+    public void setEmps(List<Employee> emps) {
+        this.emps = emps;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "id=" + id +
+                ", departmentName='" + departmentName + '\'' +
+                '}';
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
+}
